@@ -29,3 +29,5 @@ jobs:
           java-version: '8'
       - name: Get Maven checkstyle report
         run: mvn -B checkstyle:check
+      - name: Analyze dependencies
+        run: mvn -B dependency:analyze -Plint
