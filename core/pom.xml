@@ -41,6 +41,12 @@
     </dependency>
 
     <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>31.0.1-android</version>
+    </dependency>
+
+    <dependency>
       <groupId>com.google.errorprone</groupId>
       <artifactId>error_prone_annotations</artifactId>
     </dependency>
@@ -60,12 +66,6 @@
       <groupId>com.google.auth</groupId>
       <artifactId>google-auth-library-oauth2-http</artifactId>
       <version>1.2.2</version>
-    </dependency>
-
-    <dependency>
-      <groupId>com.google.guava</groupId>
-      <artifactId>guava</artifactId>
-      <version>31.0.1-android</version>
     </dependency>
 
     <dependency>
