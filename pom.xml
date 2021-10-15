@@ -356,6 +356,10 @@
             <version>3.2.0</version>
             <configuration>
               <failOnWarning>true</failOnWarning>
+              <ignoredDependencies>
+                <!-- The following dependencies are not referenced directly but nonetheless necessary. -->
+                org.ow2.asm:asm-util,com.github.jnr:jnr-unixsocket,org.postgresql:postgresql,io.projectreactor.netty:reactor-netty
+              </ignoredDependencies>
             </configuration>
             <executions>
               <execution>

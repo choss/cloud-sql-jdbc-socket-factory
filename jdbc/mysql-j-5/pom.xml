@@ -24,7 +24,7 @@
     <version>1.3.5-SNAPSHOT</version>
     <relativePath>../..</relativePath>
   </parent>
-  
+
   <artifactId>mysql-socket-factory</artifactId>
   <packaging>jar</packaging>
 
@@ -45,6 +45,12 @@
     <dependency>
       <groupId>com.google.cloud.sql</groupId>
       <artifactId>jdbc-socket-factory-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>31.0.1-android</version>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
