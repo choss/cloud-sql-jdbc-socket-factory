@@ -63,27 +63,24 @@
     </dependency>
 
     <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>31.0.1-android</version>
+    </dependency>
+
+    <dependency>
       <groupId>com.google.api-client</groupId>
       <artifactId>google-api-client</artifactId>
-      <scope>test</scope>
     </dependency>
 
     <dependency>
       <groupId>com.google.http-client</groupId>
       <artifactId>google-http-client</artifactId>
-      <scope>test</scope>
     </dependency>
 
     <dependency>
       <groupId>com.google.http-client</groupId>
       <artifactId>google-http-client-jackson2</artifactId>
-      <scope>test</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>com.google.guava</groupId>
-      <artifactId>guava</artifactId>
-      <version>31.0.1-android</version>
       <scope>test</scope>
     </dependency>
 
