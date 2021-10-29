@@ -52,16 +52,6 @@
       <artifactId>netty-handler</artifactId>
     </dependency>
     <dependency>
-      <groupId>io.projectreactor.netty</groupId>
-      <artifactId>reactor-netty</artifactId>
-      <exclusions>
-        <exclusion>
-          <groupId>io.micrometer</groupId>
-          <artifactId>micrometer-core</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
       <groupId>com.google.cloud.sql</groupId>
       <artifactId>jdbc-socket-factory-core</artifactId>
       <version>${project.version}</version>

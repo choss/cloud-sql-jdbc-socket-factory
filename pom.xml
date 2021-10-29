@@ -35,7 +35,7 @@
   <licenses>
     <license>
       <name>The Apache License, Version 2.0</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
     </license>
   </licenses>
 
@@ -65,7 +65,7 @@
   <developers>
     <developer>
       <organization>Google</organization>
-      <organizationUrl>http://www.google.com</organizationUrl>
+      <organizationUrl>https://www.google.com</organizationUrl>
     </developer>
   </developers>
 
@@ -91,6 +91,16 @@
        See https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html -->
     <dependencies>
       <dependency>
+        <groupId>com.google.cloud.sql</groupId>
+        <artifactId>cloud-sql-connector-r2dbc-core</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.cloud.sql</groupId>
+        <artifactId>jdbc-socket-factory-core</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.google.code.findbugs</groupId>
         <artifactId>jsr305</artifactId>
         <version>3.0.2</version>
@@ -101,13 +111,33 @@
         <version>3.4.11</version>
       </dependency>
       <dependency>
-        <groupId>io.projectreactor.netty</groupId>
-        <artifactId>reactor-netty</artifactId>
-        <version>1.0.11</version>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-handler</artifactId>
+        <version>4.1.68.Final</version>
       </dependency>
       <dependency>
         <groupId>io.netty</groupId>
-        <artifactId>netty-handler</artifactId>
+        <artifactId>netty-codec</artifactId>
+        <version>4.1.68.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-buffer</artifactId>
+        <version>4.1.68.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-transport</artifactId>
+        <version>4.1.68.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-common</artifactId>
+        <version>4.1.56.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-resolver</artifactId>
         <version>4.1.68.Final</version>
       </dependency>
       <dependency>
@@ -363,13 +393,10 @@
                 Necessary for Postgres support:
                 org.postgresql:postgresql
 
-                Necessary for r2jdbc support:
-                io.projectreactor.netty:reactor-netty
-
                 Global test dependencies unused in r2dbc core (no tests currently):
                 junit:junit,com.google.truth:truth
                 -->
-                org.ow2.asm:asm-util,com.github.jnr:jnr-unixsocket,org.postgresql:postgresql,io.projectreactor.netty:reactor-netty,junit:junit,com.google.truth:truth
+                org.ow2.asm:asm-util,com.github.jnr:jnr-unixsocket,org.postgresql:postgresql,junit:junit,com.google.truth:truth
               </ignoredDependencies>
             </configuration>
             <executions>
