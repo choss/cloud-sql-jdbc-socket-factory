@@ -22,7 +22,7 @@
     <groupId>com.google.cloud.sql</groupId>
     <artifactId>jdbc-socket-factory-parent</artifactId>
     <version>1.3.5-SNAPSHOT</version>
-    <relativePath>../..</relativePath>
+    <relativePath>../../pom.xml</relativePath>
   </parent>
   <artifactId>cloud-sql-connector-r2dbc-core</artifactId>
   <packaging>jar</packaging>
@@ -37,6 +37,7 @@
     <dependency>
       <groupId>org.reactivestreams</groupId>
       <artifactId>reactive-streams</artifactId>
+      <version>1.0.3</version>
     </dependency>
     <dependency>
       <groupId>io.r2dbc</groupId>
@@ -63,6 +64,7 @@
     <dependency>
       <groupId>com.google.cloud.sql</groupId>
       <artifactId>jdbc-socket-factory-core</artifactId>
+      <version>${project.version}</version>
     </dependency>
   </dependencies>
 
